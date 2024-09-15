@@ -1,0 +1,8 @@
+import random
+import time
+
+cara = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+long = int(input("Introduce el valor de la contraseña: "))
+contra = ''.join(random.choice(cara) for i in range(long))
+
+print("Contraseña:", contra)
